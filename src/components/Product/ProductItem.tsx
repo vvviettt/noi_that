@@ -10,8 +10,8 @@ const ProductItem: React.FC<Product> = ({
   brand,
 }) => {
   return (
-    <Link to={`/product?id=${id}`}>
-      <div className="w-1/4 pt-[3.125rem] px-2.5 flex flex-col items-center">
+    <Link to={`/product/${id}`}>
+      <div className="pt-[3.125rem] px-2.5 flex flex-col items-center">
         <div className="w-full aspect-square">
           <img src={imageUrl}></img>
         </div>

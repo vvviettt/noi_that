@@ -32,7 +32,9 @@ const BestSeller: React.FC = () => {
                 <ProductItemLoading key={index} />
               ))
             : product.products.map((item, index) => (
-                <ProductItem {...item} key={index} />
+                <div className="w-1/4">
+                  <ProductItem {...item} key={index} />
+                </div>
               ))}
         </div>
       </div>
